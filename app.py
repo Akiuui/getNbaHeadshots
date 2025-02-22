@@ -32,7 +32,7 @@ def getPlayer():
 
     player = player[0]
 
-    imgLink = f"https://cdn.nba.com/headshots/nba/latest/1040x760/{player["id"]}.png"
+    imgLink = f"https://cdn.nba.com/headshots/nba/latest/1040x760/{player['id']}.png"
 
     return jsonify({"Image link":imgLink})
 
