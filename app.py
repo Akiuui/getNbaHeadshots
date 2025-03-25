@@ -2,7 +2,11 @@ from flask import Flask, request, jsonify
 import os
 import logging
 from nba_api.stats.static import players
+from flask_cors import CORS
+
 app = Flask(__name__)
+
+CORS(app)
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
