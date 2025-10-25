@@ -10,7 +10,6 @@ CORS(app)
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
-
 @app.route("/")
 def getPlayer():
     fullName = request.args.get("fullName")
